@@ -1,13 +1,4 @@
-
-
-//Global
-* {
-    color: ;
-    font-size: 1.2rem;
-}
-
-.container {
-    background-color: ;
+@mixin cont-text {
     border: 1px solid #000;
     display: flex;
     height: 500px;
@@ -16,22 +7,47 @@
     padding: 1em;
     width: 50%;
 
+}
+
+@import "colors.scss";
+//Global
+* {
+    //color: ;
+    font-size: 1.2rem;
+} 
+ /*p{
+    text-align: center;
+    padding-top: 45%;
+   } */ 
+
+
+.container {
+   background-color: $colorCont ;
+   @include cont-text();
+  
     .left {
-        background-color: ;
+       background-color:$color-bgrd1 ;
         height: 100%;
         width: 69%;
         position: relative;
     }
 
+    .left p {
+    text-align: center;
+    padding-top: 45%;
+    color: $textColor;
+
+    }
+
     .right {
-        background-color: ;
+        background-color: $color-bgrd2 ;
         height: 100%;
         position: relative;
         width: 29%;
 
         .button {
-            background-color: ;
-            color: ;
+           background-color: $color-button;
+            color: $color-btnText ;
             border: 0;
             border-radius: 10px;
             cursor: pointer;
@@ -47,6 +63,12 @@
             left: 50%;
             transform: translate(-50%, -120%);
         }
+    }
+    .right p {
+    text-align: center;
+    padding-top: 95%;
+    color: $textColor;
+
     }
 
 }
