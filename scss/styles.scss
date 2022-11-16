@@ -15,10 +15,7 @@
     //color: ;
     font-size: 1.2rem;
 } 
- /*p{
-    text-align: center;
-    padding-top: 45%;
-   } */ 
+ 
 
 
 .container {
@@ -30,14 +27,13 @@
         height: 100%;
         width: 69%;
         position: relative;
+        p {
+        text-align: center;
+        padding-top: 45%;
+        color: $textColor;
+        }
     }
 
-    .left p {
-    text-align: center;
-    padding-top: 45%;
-    color: $textColor;
-
-    }
 
     .right {
         background-color: $color-bgrd2 ;
@@ -63,12 +59,12 @@
             left: 50%;
             transform: translate(-50%, -120%);
         }
+            p {
+             text-align: center;
+             padding-top: 95%;
+             color: $textColor;
+            }
     }
-    .right p {
-    text-align: center;
-    padding-top: 95%;
-    color: $textColor;
-
-    }
+   
 
 }
